@@ -1,39 +1,75 @@
 <p>
-    <i>( Describe task in general )</i>
-</p>
+    In linear algebra
+    the transpose of a matrix
+    <b>A</b> is another matrix <b>A</b><sup>T</sup> (also written <b>A</b>′, <b>A</b><sup>tr</sup>,<sup>t</sup><b>A</b>
+    or <b>A</b><sup>t</sup>) created by any one of the following equivalent
+    actions:</p>
+
+<ul>
+    <li>reflect <b>A</b> over its main diagonal (which runs from top-left to
+        bottom-right) to obtain <b>A</b><sup>T</sup></li>
+    <li>write the rows of <b>A</b> as the columns of <b>A</b><sup>T</sup></li>
+    <li>write the columns of <b>A</b> as the rows of <b>A</b><sup>T</sup></li>
+</ul>
+
+<p>Formally, the <i>i</i> th row, <i>j</i> th column element of
+    <b>A</b><sup>T</sup> is the <i>j</i> th row, <i>i</i> th column element of
+    <b>A</b>:</p>
 
 <p>
-    Sum two passed ints
+    [<b>A</b><sup>T</sup>]<sub>i j</sub> = [<b>A</b>]<sub>j i</sub>
 </p>
+
+<p>If <b>A</b> is an <span class="nowrap"><i>m</i> × <i>n</i></span> matrix then
+    <b>A</b><sup>T</sup> is an <span class="nowrap"><i>n</i> × <i>m</i></span>
+    matrix.</p>
+
+<p>Given a matrix as 2D list with integers.
+   Your task is to return a transposed matrix based on input.
+</p>
+
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
+    <img class="for_info_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="380px"/>
 </p>
-
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> A matrix. A list of lists with integers.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong>A transposed matrix. A list of lists with integers.
 </p>
-
-
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+    <pre class="brush: python">checkio([[1, 2, 3],
+         [4, 5, 6],
+         [7, 8, 9]]) == [[1, 4, 7],
+                         [2, 5, 8],
+                         [3, 6, 9]]
+checkio([[1, 4, 3],
+         [8, 2, 6],
+         [7, 8, 3],
+         [4, 9, 6],
+         [7, 8, 1]]) == [[1, 8, 7, 4, 7],
+                         [4, 2, 8, 9, 8],
+                         [3, 6, 3, 6, 1]]
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Mathematical software. Vector graphics.
 </p>
