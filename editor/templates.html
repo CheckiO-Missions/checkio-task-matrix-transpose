@@ -9,22 +9,34 @@
 
 <script type="text/template" id="template_tryit">
     <div class="tryit-content center-exp">
-        <table class="tool">
-            <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
-                </td>
-            </tr>
+        <div class="tooltip">
+            Enter matrix's size
+        </div>
+    <form class="form-matrix">
+        <label>rows: </label>
+        <input class="input-row" type="number" min="1" max="5" value="5">
+        <label>columns: </label>
+        <input class="input-col" type="number" min="1" max="5" value="5">
+        <input class="btn" type="submit" value="Generate">
+    </form>
+    <table>
+        <tr style="display: none">
+            <td>
+                Input:
+            </td>
+            <td>
+                Your result:
+            </td>
+        </tr>
+        <tr>
+            <td class="input-canvas">
 
-        </table>
+            </td>
+            <td class="output-canvas checkio-result">
+                <span class="checkio-result-in"></span>
+            </td>
+        </tr>
+    </table>
+
     </div>
 </script>

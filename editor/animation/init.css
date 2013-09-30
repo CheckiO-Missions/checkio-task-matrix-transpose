@@ -73,11 +73,42 @@
     height: 20%;
 }
 
+.tryit-content form *{
+    font-family: Verdana;
+    font-size: 16px;
+    color: #294270;
+    padding-left: 10px;
+}
+
+.tryit-content form label {
+    font-size: 14px;
+}
+
+.tryit-content table {
+    width: 380px;
+}
+
+.tryit-content table td {
+    color: #294270;
+    font-size: 14px;
+    font-family: Verdana;
+    width: 50%;
+    text-align: center;
+}
+
+.tryit-content .tooltip{
+    font-size: 14px;
+    font-family: Verdana;
+    text-align: center;
+    color: #294270;
+}
+
 .tryit-content .checkio-result{
     font-size: 16px;
     text-align: center;
     color: #294270;
     width: 160px;
+    word-break: break-all;
 }
 
 .tryit-content .btn {
