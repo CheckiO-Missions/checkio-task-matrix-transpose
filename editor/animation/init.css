@@ -73,6 +73,10 @@
     height: 20%;
 }
 
+.tryit-content form {
+    margin-bottom: 5px;
+}
+
 .tryit-content form *{
     font-family: Verdana;
     font-size: 16px;
@@ -101,6 +105,7 @@
     font-family: Verdana;
     text-align: center;
     color: #294270;
+    padding: 3px;
 }
 
 .tryit-content .checkio-result{
@@ -112,6 +117,7 @@
 }
 
 .tryit-content .btn {
+    margin-left: 5px;
     padding: 4px 6px;
     font-size: 14px;
     font-family: Verdana;
