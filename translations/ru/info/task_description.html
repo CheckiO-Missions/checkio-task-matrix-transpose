@@ -1,0 +1,86 @@
+<p>
+    В линейной алгебре, транспонирование матрицы
+    <b>A</b> есть другая матрица <b>A</b><sup>T</sup> (также может быть записана, как <b>A</b>′, <b>A</b><sup>tr</sup>,<sup>t</sup><b>A</b>
+    или <b>A</b><sup>t</sup>) получаемая одним из следующих равноправных методов:</p>
+
+<ul>
+    <li>Отражение матрицы <b>A</b> по оси главной диагонали (из левого верхнего в нижний правый угол)
+        в <b>A</b><sup>T</sup></li>;
+    <li>Строки матрицы <b>A</b> записываются, как столбцы матрицы <b>A</b><sup>T</sup></li>
+    <li>Столбцы матрицы <b>A</b> записываются, как строки матрицы <b>A</b><sup>T</sup></li>
+</ul>
+
+<p>Формально, элемент в <i>i</i> строке и <i>j</i> столбце матрицы
+    <b>A</b><sup>T</sup> есть элемент <i>j</i> строке и <i>i</i> столбца матрицы
+    <b>A</b>:</p>
+
+<p>
+    [<b>A</b><sup>T</sup>]<sub>i j</sub> = [<b>A</b>]<sub>j i</sub>
+</p>
+
+<p>Если <b>A</b> имеет размер <span class="nowrap"><i>m</i> × <i>n</i></span>, тогда
+    <b>A</b><sup>T</sup> имеет размер <span class="nowrap"><i>n</i> × <i>m</i></span>.
+</p>
+
+<p>
+    Вам дана матрица, как двумерный массив чисел. Ваша задача получить транспонированую матрицу от данной.
+</p>
+
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="380px"/>
+</p>
+<p>
+    <strong>Входные данные: </strong> Матрица, как список (list) списков (list) с целыми числами(int).
+</p>
+
+<p>
+    <strong>Выходные данные: </strong>Транспонированая матрица, как список (list) списков (list) с целыми числами(int).
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">checkio([[1, 2, 3],
+         [4, 5, 6],
+         [7, 8, 9]]) == [[1, 4, 7],
+                         [2, 5, 8],
+                         [3, 6, 9]]
+checkio([[1, 4, 3],
+         [8, 2, 6],
+         [7, 8, 3],
+         [4, 9, 6],
+         [7, 8, 1]]) == [[1, 8, 7, 4, 7],
+                         [4, 2, 8, 9, 8],
+                         [3, 6, 3, 6, 1]]
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Связь с реальной жизнью: </strong>
+    Наиболее очевидное использование данной задачи - это математической программное обеспечение.
+    Но также данные методы широко используются при работе с векторной графикой.
+</p>
+
+
+<p>
+    <strong>Предусловия:</strong><br>
+    0 &lt; len(<strong>matrix</strong>) &lt; 10<br>
+    all(0 &lt; len(row) &lt; 10 for row in <strong>matrix</strong>)
+</p>
+
+<p class="for_info_only">
+    <strong>Как использовать TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/r62S8J2Oa3c" frameborder="0" allowfullscreen></iframe>
+</p>
