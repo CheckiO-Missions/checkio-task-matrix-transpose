@@ -77,8 +77,9 @@ checkio([[1, 4, 3],
 
 
 <p>
-    <strong>Precondition:</strong> 0 < |A| < 10<br>
-    &forall; x ∈ A : 0 &le; x &lt; 10
+    <strong>Precondition:</strong><br>
+    0 &lt; len(<strong>matrix</strong>) &lt; 10<br>
+    all(0 &lt; len(row) &lt; 10 for row in <strong>matrix</strong>)
 </p>
 
 <p class="for_info_only">
