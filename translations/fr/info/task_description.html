@@ -1,0 +1,87 @@
+<p>
+    En algèbre linéaire, la transposée d'une matrice 
+    <b>A</b> est une autre matrice <b>A</b><sup>T</sup> (aussi désignée par <b>A</b>′, <b>A</b><sup>tr</sup>,<sup>t</sup><b>A</b>
+    ou <b>A</b><sup>t</sup>), construite en suivant l'une des opérations équivalentes suivantes:</p>
+
+<ul>
+    <li>faire la symétrie de <b>A</b>par rapport à sa diagonale principale (qui commence en haut à gauche et finit en bas à droite) 
+    pour obtenir <b>A</b><sup>T</sup></li>
+    <li>écrire les lignes de <b>A</b> comme colonnes de <b>A</b><sup>T</sup></li>
+    <li>écrire les colonnes de <b>A</b> comme lignes de <b>A</b><sup>T</sup></li>
+</ul>
+
+<p>Formellement, l'élément situé à la <i>i</i><sup>ème</sup> ligne et la  <i>j</i><sup>ème</sup> colonne de <b>A</b><sup>T</sup>
+est l'élément situé à la <i>j</i><sup>ème</sup> ligne et <i>i</i><sup>ème</sup> colonne de <b>A</b>:</p>
+
+<p>
+    [<b>A</b><sup>T</sup>]<sub>i j</sub> = [<b>A</b>]<sub>j i</sub>
+</p>
+
+<p>Si <b>A</b> est une matrice <span class="nowrap"><i>m</i> × <i>n</i></span>, alors 
+    <b>A</b><sup>T</sup> est une matrice <span class="nowrap"><i>n</i> × <i>m</i></span>.</p>
+
+<p>
+  On vous fournit une matrice, comme liste 2D d'entiers.
+  Votre mission est de retourner la matrice transposée de la matrice donnée.
+</p>
+
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="transposed-matrix"
+         src="{{ MEDIA }}transposed-matrix.png"
+         alt="transposed-matrix"
+         width="380px"/>
+</p>
+<p>
+    <strong>Input: </strong>Une matrice, comme liste de listes d'entiers. 
+</p>
+
+<p>
+    <strong>Output: </strong>La matrice transposée, comme liste/tuple de listes/tuples d'entiers.
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">checkio([[1, 2, 3],
+         [4, 5, 6],
+         [7, 8, 9]]) == [[1, 4, 7],
+                         [2, 5, 8],
+                         [3, 6, 9]]
+checkio([[1, 4, 3],
+         [8, 2, 6],
+         [7, 8, 3],
+         [4, 9, 6],
+         [7, 8, 1]]) == [[1, 8, 7, 4, 7],
+                         [4, 2, 8, 9, 8],
+                         [3, 6, 3, 6, 1]]
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Application: </strong>
+    L'application la plus évidente de ce concept est l'algèbre linéaire en mathématiques,
+    mais il peut être appliqué aussi dans le domaine du dessin vectoriel.
+    Dans un ordinateur, on peut éviter de transposer une matrice explicitement en mémoire,
+    puisqu'il suffit d'accéder aux données de façon adaptée.
+</p>
+
+
+<p>
+    <strong>Préconditions:</strong><br>
+    0 &lt; len(<strong>matrix</strong>) &lt; 10<br>
+    all(0 &lt; len(row) &lt; 10 for row in <strong>matrix</strong>)
+</p>
+
+<p class="for_info_only">
+    <strong>Comment utiliser TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/r62S8J2Oa3c" frameborder="0" allowfullscreen></iframe>
+</p>
