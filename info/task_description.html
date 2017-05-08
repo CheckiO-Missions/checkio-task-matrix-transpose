@@ -27,19 +27,10 @@
     Your task is to return a transposed matrix based on input.
 </p>
 
+<div style="text-align: center">
+    <img src="{{MEDIA}}transposed-matrix.png" style="max-height: 350px">
+</div>
 
-<p style="text-align: center;">
-    <img class="for_info_only"
-         title="transposed-matrix"
-         src="{{ MEDIA }}transposed-matrix.png"
-         alt="transposed-matrix"
-         width="600px"/>
-    <img class="for_editor_only"
-         title="transposed-matrix"
-         src="{{ MEDIA }}transposed-matrix.png"
-         alt="transposed-matrix"
-         width="380px"/>
-</p>
 <p>
     <strong>Input: </strong> A matrix as a list of lists with integers.
 </p>
@@ -48,25 +39,40 @@
     <strong>Output: </strong>The transposed matrix as a list/tuple of lists/tuples with integers.
 </p>
 
-<div class="for_info_only">
-
-    <p>
-        <strong>Example:</strong>
-    </p>
-    <pre class="brush: python">checkio([[1, 2, 3],
+<p class="for_info_only">
+<strong>Example:</strong>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: python">
+transposeMatrix([[1, 2, 3],
+                 [4, 5, 6],
+                 [7, 8, 9]]) == [[1, 4, 7],
+                                 [2, 5, 8],
+                                 [3, 6, 9]])
+transposeMatrix([[1, 4, 3],
+                 [8, 2, 6],
+                 [7, 8, 3],
+                 [4, 9, 6],
+                 [7, 8, 1]]) == [[1, 8, 7, 4, 7],
+                                 [4, 2, 8, 9, 8],
+                                 [3, 6, 3, 6, 1]])
+</pre>
+{% else %}
+<pre class="brush: python">
+checkio([[1, 2, 3],
          [4, 5, 6],
          [7, 8, 9]]) == [[1, 4, 7],
                          [2, 5, 8],
-                         [3, 6, 9]]
+                         [3, 6, 9]])
 checkio([[1, 4, 3],
          [8, 2, 6],
          [7, 8, 3],
          [4, 9, 6],
          [7, 8, 1]]) == [[1, 8, 7, 4, 7],
                          [4, 2, 8, 9, 8],
-                         [3, 6, 3, 6, 1]]
-    </pre>
-</div>
+                         [3, 6, 3, 6, 1]])
+</pre>
+{% endif %}
+</p>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
@@ -74,7 +80,6 @@ checkio([[1, 4, 3],
     but the concept can be applied in the area of vector graphics.
     On a computer, one can often avoid explicitly transposing a matrix in memory by simply accessing the same data in a different order.
 </p>
-
 
 <p>
     <strong>Precondition:</strong><br>

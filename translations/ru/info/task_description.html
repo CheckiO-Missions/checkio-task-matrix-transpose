@@ -26,19 +26,10 @@
     Вам дана матрица, как двумерный массив чисел. Ваша задача получить транспонированую матрицу от данной.
 </p>
 
+<div style="text-align: center">
+    <img src="{{MEDIA}}transposed-matrix.png" style="max-height: 350px">
+</div>
 
-<p style="text-align: center;">
-    <img class="for_info_only"
-         title="transposed-matrix"
-         src="{{ MEDIA }}transposed-matrix.png"
-         alt="transposed-matrix"
-         width="600px"/>
-    <img class="for_editor_only"
-         title="transposed-matrix"
-         src="{{ MEDIA }}transposed-matrix.png"
-         alt="transposed-matrix"
-         width="380px"/>
-</p>
 <p>
     <strong>Входные данные: </strong> Матрица, как список (list) списков (list) с целыми числами(int).
 </p>
@@ -47,32 +38,46 @@
     <strong>Выходные данные: </strong>Транспонированая матрица, как список (list) списков (list) с целыми числами(int).
 </p>
 
-<div class="for_info_only">
-
-    <p>
-        <strong>Примеры:</strong>
-    </p>
-    <pre class="brush: python">checkio([[1, 2, 3],
+<p class="for_info_only">
+<strong>Пример:</strong>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: python">
+transposeMatrix([[1, 2, 3],
+                 [4, 5, 6],
+                 [7, 8, 9]]) == [[1, 4, 7],
+                                 [2, 5, 8],
+                                 [3, 6, 9]])
+transposeMatrix([[1, 4, 3],
+                 [8, 2, 6],
+                 [7, 8, 3],
+                 [4, 9, 6],
+                 [7, 8, 1]]) == [[1, 8, 7, 4, 7],
+                                 [4, 2, 8, 9, 8],
+                                 [3, 6, 3, 6, 1]])
+</pre>
+{% else %}
+<pre class="brush: python">
+checkio([[1, 2, 3],
          [4, 5, 6],
          [7, 8, 9]]) == [[1, 4, 7],
                          [2, 5, 8],
-                         [3, 6, 9]]
+                         [3, 6, 9]])
 checkio([[1, 4, 3],
          [8, 2, 6],
          [7, 8, 3],
          [4, 9, 6],
          [7, 8, 1]]) == [[1, 8, 7, 4, 7],
                          [4, 2, 8, 9, 8],
-                         [3, 6, 3, 6, 1]]
-    </pre>
-</div>
+                         [3, 6, 3, 6, 1]])
+</pre>
+{% endif %}
+</p>
 
 <p class="for_info_only">
     <strong>Связь с реальной жизнью: </strong>
     Наиболее очевидное использование данной задачи - это математической программное обеспечение.
     Но также данные методы широко используются при работе с векторной графикой.
 </p>
-
 
 <p>
     <strong>Предусловия:</strong><br>
