@@ -1,4 +1,6 @@
-def checkio(data):
+from typing import List
+
+def checkio(data: List[List[int]]) -> List[List[int]]:
 
     #replace this for solution
     return data
